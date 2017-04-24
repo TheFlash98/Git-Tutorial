@@ -18,3 +18,15 @@ To check if you have done everything correct till now, run
 
 `git config --list`
 
+## Initialising a Repository
+For this you'll also like a basic level knowledge of command line tools. Here's a nice [cheatsheet](http://learntocodewith.me/command-line/unix-command-cheat-sheet/) for it.
+So once you `cd` into your repository you have to run
+
+`git init`
+
+## Cloning an Exisiting Repository
+If you have already have a repository hosted on Github, to copy it locally and make changes to it all you have to do this run
+
+`git clone https://github.com/TheFlash98/Git-Tutorial.git`
+
+This particular command will be clone the Git-Tutorial repository to your computer locally. As you can see the command, I've written `git clone` followed by a link. This link is unique to every repository. **Note**: This is the only step except installing for which you need an internet connection. Everything else can be simple done offline.
