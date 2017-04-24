@@ -30,3 +30,25 @@ If you have already have a repository hosted on Github, to copy it locally and m
 `git clone https://github.com/TheFlash98/Git-Tutorial.git`
 
 This particular command will be clone the Git-Tutorial repository to your computer locally. As you can see the command, I've written `git clone` followed by a link. This link is unique to every repository. **Note**: This is the only step except installing for which you need an internet connection. Everything else can be simple done offline.
+You can see the link to this repo below the Green button which reads "Clone or Download"
+![alt-text](https://github.com/TheFlash98/Git-Tutorial/blob/master/Getting-link.png)
+
+## Code Time!
+#### Commiting
+Now that you have your repository locally on your with you it's time for you make changes and build your project. So now comes the most major part and the actually reason as why we used Git(Version Control) at all. After you complete something substantial like fixing a bug or adding a new feature you should save the instance of your files aka commit. To see the changes you have made since the last commit run
+
+`git status`
+
+Now this command might show you file names in two different colours. The files shown in green are the ones that have been staged, that is commiting now will commit the changes the made to them. The other category of files shown in red colour are the untracked files. To commit these files you will have to first stage them. To stage them you run
+
+`git add filename.extension`
+
+or if you want to just stage all the files, simply do 
+
+`git add .`
+
+If you run `git status` now, all the files would be stages and ready to be commited. To commit run
+
+`git commit -m "Commit message"`
+
+The Commit Message should be short and sweet such that someone reading it gets an idea as to what you have done. 
