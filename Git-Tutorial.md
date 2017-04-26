@@ -30,7 +30,8 @@ If you have already have a repository hosted on Github, to copy it locally and m
 `git clone https://github.com/TheFlash98/Git-Tutorial.git`
 
 This particular command will be clone the Git-Tutorial repository to your computer locally. As you can see the command, I've written `git clone` followed by a link. This link is unique to every repository. **Note**: This is the only step except installing for which you need an internet connection. Everything else can be simple done offline.
-You can see the link to this repo below the Green button which reads "Clone or Download"
+You can see the link to this repository below the Green button which reads "Clone or Download"
+
 ![alt-text](https://github.com/TheFlash98/Git-Tutorial/blob/master/Getting-link.png)
 
 ## Code Time!
@@ -51,4 +52,30 @@ If you run `git status` now, all the files would be stages and ready to be commi
 
 `git commit -m "Commit message"`
 
-The Commit Message should be short and sweet such that someone reading it gets an idea as to what you have done. 
+The Commit Message should be short and sweet such that someone reading it gets an idea as to what you have done. To see a record of all the commits you have made run
+
+`git log`
+
+Let's say you are working on your project and have made 5 commits. But after the 5th commit you realise that you(or someone else) did someting wrong in the second commit and now you have want your repository to go back to that commit. Meaning you want your repository to be the way it was in that commit. Every commit has it's own commit id which is a long hexadeimal number eg cffb604020ec0d9bdd9b5b23de14fcac40a661be. Now, to go back to this commit you have to run
+
+`git checkout cffb604020ec0d9bdd9b5b23de14fcac40a661be`
+
+What this command does is that it will create a new branch, I have spoken about branches briefly below. Think of this something like time travel. There is one time line but you realised you have screwed this time line and want to travel back in time to fix things. So you travel back and make your changes the result of which is that you end up creating a new timeline(branch).
+
+#### Pushing 
+So by now you know how to make a copy of your repository locally and how to make changes. So now what you have to do this **push** this changes to the repository you have online so that other can see what you've done and keep up. To these we'll need to talk a little about two things:
+- **Remote:** A remote is like a connector between your local repository and the online one. By default if you clone a repository a remote called origin is made. You can see the list of remotes by doing `git remote`
+- **Branches:** Branching means you diverge from the main line of development and continue to do work without messing with that main line. There is always a default branch called master provided my git. To read up more about branches and their use, click [here](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell).
+
+To push your changes online you will have to run 
+
+`git push origin master`
+
+Basically `git push` followed by the local remote name and the branch you want to push to.
+
+#### Pulling
+You will probably have more than one person working on your repository. All of them will make their changes locally and push them to the the online repository. To build on their changes you will have to get those changes locally. Cloning the repository again would be foolish. It's like uninstalling and reintalling an app when it gets updates. Hence, git provides you with a very useful command. 
+
+`git pull origin master`
+
+BasixBasically `git pull` followed by the local remote name and the branch you want to pull from.
