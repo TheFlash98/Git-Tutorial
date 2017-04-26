@@ -79,3 +79,11 @@ You will probably have more than one person working on your repository. All of t
 `git pull origin master`
 
 Basically `git pull` followed by the local remote name and the branch you want to pull from.
+
+#### Merge Conflicts
+This is the most painful thing about collaborating with others. Usually when you merge git smartly merges everything and you don't have to bother. But in some cases it occurs. For example if two people changed the same lines in the same file, or if one person decided to delete it while the other person decided to modify it, Git simply cannot know what is correct. Git will then mark the file as having a conflict - which you'll have to solve before you can continue your work. A merge conflict looks something like 
+`<<<<<<< HEAD
+ The content of the while you're trying to merge
+ =======
+ The content that you have written
+ <<<<<<< commit id in which you wrote the conflicting commit`
