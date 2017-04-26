@@ -89,3 +89,8 @@ The content of the while you're trying to merge
 The content that you have written
 <<<<<<< commit id in which you wrote the conflicting commit
 ```
+
+I think these basics are enough for you to build a project with your pals. However there are various other features which github and git offer. You can check out the following links.
+1. [http://gitreal.codeschool.com/levels/1](http://gitreal.codeschool.com/levels/1)
+2. [http://learngitbranching.js.org/](http://learngitbranching.js.org/)
+3. [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
