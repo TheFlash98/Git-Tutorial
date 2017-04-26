@@ -78,4 +78,4 @@ You will probably have more than one person working on your repository. All of t
 
 `git pull origin master`
 
-BasixBasically `git pull` followed by the local remote name and the branch you want to pull from.
+Basically `git pull` followed by the local remote name and the branch you want to pull from.
