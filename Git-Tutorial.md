@@ -36,7 +36,7 @@ You can see the link to this repository below the Green button which reads "Clon
 
 ## Code Time!
 #### Commiting
-Now that you have your repository locally on your with you it's time for you make changes and build your project. So now comes the most major part and the actually reason as why we used Git(Version Control) at all. After you complete something substantial like fixing a bug or adding a new feature you should save the instance of your files aka commit. To see the changes you have made since the last commit run
+Now that you have your repository locally with you it's time for you make changes and build your project. So now comes the most major part and the actually reason as why we used Git(Version Control) at all. After you complete something substantial like fixing a bug or adding a new feature you should save the instance of your files aka commit. To see the changes you have made since the last commit run
 
 `git status`
 
@@ -44,9 +44,15 @@ Now this command might show you file names in two different colours. The files s
 
 `git add filename.extension`
 
-or if you want to just stage all the files, simply do 
+or if you want to just stage all the files, simply do one of these
 
 `git add .`
+`git add -A`
+`git add -u`
+
+`git add -A` is the safest one as it adds all stages all changes, including the new files you've added, the ones you've modified, as well as the ones you've deleted.
+`git add .` does not stage the deleted files, while `git add -u` doesn't stage the new files.
+
 
 If you run `git status` now, all the files would be stages and ready to be commited. To commit run
 
@@ -63,7 +69,7 @@ Let's say you are working on your project and have made 5 commits. But after the
 What this command does is that it will create a new branch, I have spoken about branches briefly below. Think of this something like time travel. There is one time line but you realised you have screwed this time line and want to travel back in time to fix things. So you travel back and make your changes the result of which is that you end up creating a new timeline(branch).
 
 #### Pushing 
-So by now you know how to make a copy of your repository locally and how to make changes. So now what you have to do this **push** this changes to the repository you have online so that other can see what you've done and keep up. To these we'll need to talk a little about two things:
+So by now you know how to make a copy of your repository locally and how to make changes. So now what you have to do is **push** these changes to the repository you have online so that others can see what you've done and keep up. To do these we'll need to talk a little about two things:
 - **Remote:** A remote is like a connector between your local repository and the online one. By default if you clone a repository a remote called origin is made. You can see the list of remotes by doing `git remote`
 - **Branches:** Branching means you diverge from the main line of development and continue to do work without messing with that main line. There is always a default branch called master provided my git. To read up more about branches and their use, click [here](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell).
 
